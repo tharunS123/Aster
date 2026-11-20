@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or help
+    url: https://github.com/tharunS123/Aster/discussions
+    about: Ask questions and share ideas here. Open a bug report only for something that's broken.
+  - name: Security vulnerability
+    url: https://github.com/tharunS123/Aster/security/advisories/new
+    about: Report security problems privately, not in a public issue.

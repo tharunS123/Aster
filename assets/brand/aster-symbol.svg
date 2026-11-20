@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Aster">
+<g fill="#E7DED1">
+  <rect x="44.118" y="5.882" width="11.765" height="50.000" transform="rotate(0 50 50)"/>
+  <rect x="44.118" y="15.588" width="11.765" height="40.294" transform="rotate(60 50 50)"/>
+  <rect x="44.118" y="21.765" width="11.765" height="34.118" transform="rotate(120 50 50)"/>
+  <rect x="44.118" y="12.059" width="11.765" height="43.824" transform="rotate(180 50 50)"/>
+  <rect x="44.118" y="24.412" width="11.765" height="31.471" transform="rotate(240 50 50)"/>
+  <rect x="44.118" y="9.412" width="11.765" height="46.471" transform="rotate(300 50 50)"/>
+</g>
+</svg>
