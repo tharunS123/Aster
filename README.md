@@ -96,9 +96,9 @@ tccutil reset Microphone app.aster.Aster
 - **Dictate anywhere.** Hold ⌥ Space in any app, speak, let go. In toggle mode, press once to start and once to stop. Esc cancels.
 - **Whisper turbo, on this Mac.** Recognition by Whisper large-v3 turbo after a one-time download, or Apple's on-device speech model.
 - **You choose how much it changes.** *Cleaned* (the default) removes um, uh and stutters and fixes spacing and capitals, and never rewords. *Verbatim* keeps what you said. *Structured* (beta) lays out spoken lists and email sign-offs.
-- **Spoken corrections** (beta). "Tuesday, actually Thursday" keeps only Thursday, and times work too: "4:00 p.m., actually 5:00 p.m." gives 5:00 p.m.
+- **Optional formatting.** Turn on spoken corrections ("Tuesday, actually Thursday" keeps only Thursday), spoken punctuation and math, matching the cursor's case and spacing, and "press enter". Since 0.7.3 they start off, so Aster types what you said.
 - **It tells you what happened.** *Inserted* means Aster read the field back and saw the text. *Sent, couldn't confirm* means the app took it but wouldn't let Aster check. If the text didn't land (focus moved, a password field, Accessibility off), it's kept for you to copy or insert again.
-- **Snippets, vocabulary and learning.** Say "my email" and get your address. Fix the same word twice and Aster offers to learn it, with Undo.
+- **Snippets, vocabulary and learning.** Turn on Snippets, then say "my email" and get your address. Fix the same word twice and Aster offers to learn it, with Undo.
 - **Per-app preferences.** Give an app its own language, output mode, style or line breaks. Chat apps join lines so nothing sends early.
 - **For developers.** In apps you mark as Technical text, "payment service dot py" becomes `payment_service.py`, and paths, flags and identifiers stay exact.
 - **Compose, Transforms and Command Mode.** Speak a request and get a reply, or select text and ask for an edit. They run on Apple's on-device model or a local model on this Mac.
@@ -132,7 +132,7 @@ tccutil reset Microphone app.aster.Aster
 | --- | --- |
 | Up to 2,000 characters around the cursor, as recognition hints | On |
 | Visible text in the front window, **including web pages** (up to 40 names) | On |
-| 16 characters before the cursor, to match its case and spacing | On |
+| 16 characters before the cursor, to match its case and spacing | **Off** until you turn on Match the cursor |
 | Calendar event titles; participant names in call-app windows | On |
 | Your own just-inserted text, for 30 seconds, to learn corrections | On |
 | The kind of web page you type in (address discarded; Safari, Chrome, Arc, Edge, Brave) | On |
@@ -142,8 +142,8 @@ Never secure fields, password managers, terminals or apps you exclude. Each sour
 
 ## Known limitations
 
-- **Beta.** Aster has been tested on one Mac and has had no outside testers yet. The latest release is marked when it hasn't passed Aster's release gate; read its notes first.
-- **Formatting can be wrong.** Corrections, spoken punctuation, math, snippets and "press enter" can write the wrong form, especially after a recognition slip. Check formatted text before sending, or set Cleanup to Light in Settings.
+- **Beta.** Aster has been tested on the developer's Mac and has had no outside testers yet. Read each release's notes first.
+- **Formatting can be wrong.** If you turn them on, corrections, spoken punctuation, math, snippets and "press enter" can write the wrong form, especially after a recognition slip. That is why they start off.
 - **"Couldn't confirm" in some apps.** Electron and web apps may say *Sent, couldn't confirm* even when the text landed.
 - **One language per dictation.** No automatic language detection, mixed-language dictation or translation.
 - **Names and technical terms** can be misrecognized. Vocabulary hints help.
